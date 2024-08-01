@@ -4,7 +4,7 @@ This project demonstrates how to build a FastAPI application that uses a pre-tra
 
 ## Functionality of Application
 
-![Project Diagram](Diagram.png)
+![Project Diagram](App-functionality.png)
 
 ## Tags
 
