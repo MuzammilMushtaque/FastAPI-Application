@@ -35,15 +35,15 @@ This project demonstrates how to build a FastAPI application that uses a pre-tra
 
 ## Requirements
 
-- Docker
+- Docker Desktop
 - Docker Compose
 
 ## Setup and Run
 
 1. **Clone the Repository**:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/MuzammilMushtaque/FastAPI-Application.git
+    cd FastAPI-Application
     ```
 
 2. **Build and Run the Docker Container**:
@@ -85,7 +85,9 @@ In `app/automl.py`, we train a machine learning model using TPOT and generate in
 
 In `app/main.py`, we define the following endpoints:
 - `/best_result/`: Loads the initial HTML page with a form for new data input and displays the initial predictions.
+
 - `/predict/`: Accepts new data points via a form, makes predictions using the pre-trained model, and updates the plot with the new data.
+
 
 ### 3. HTML Template
 
@@ -98,7 +100,13 @@ In `app/templates/visualizations.html`, we define the HTML template that include
 
 1. **Access the Initial Page**: Open `http://localhost:80/best_result/` in your browser. You will see a form to input new Iris feature values and an initial scatter plot of predictions.
 
+![localhost:80/best_result/](HTML-best_result.png)
+
+
 2. **Input New Data**: Fill in the form with new Iris feature values and submit. The application will process the data, make predictions using the pre-trained model, and update the scatter plot with the new data point.
+
+![localhost:80/predict/](HTML-predict.png)
+
 
 ## Conclusion
 
