@@ -48,7 +48,8 @@ This project demonstrates how to build a FastAPI application that uses a pre-tra
 
 2. **Build and Run the Docker Container**:
     ```bash
-    docker-compose up --build
+    docker build -t fastapi-app .
+    docker run -p 80:80 fastapi-app
     ```
 
 3. **Access the Application**:
